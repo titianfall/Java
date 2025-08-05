@@ -15,6 +15,7 @@ public class P5 extends JFrame {
 		// 레이블에 절대 위치 지정
 		label.setLocation(100,100);
 		label.setSize(20, 20);
+		
 		label.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {

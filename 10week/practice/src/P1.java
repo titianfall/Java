@@ -11,6 +11,7 @@ public class P1 extends JFrame{
         JLabel la = new JLabel("Love Java");
         c.add(la);
 
+        //Entered Exited 를 이용한 실습문제 
         la.addMouseListener(new MouseAdapter(){
             @Override
             public void mouseEntered(MouseEvent e){
