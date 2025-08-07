@@ -20,12 +20,12 @@ public class E5 extends JFrame{
             g.fillOval(10,70,50,50);
             g.setColor(Color.GREEN);
             g.fillRoundRect(10,130,50,50,20,20);
-            g.setColor(Color.MAGENTA);
             //원호
+            g.setColor(Color.MAGENTA);
             g.fillArc(10,190,50,50,0,270);
-            g.setColor(Color.ORANGE);
             //폐다각형
-            int [] x = {30,10,30,60};
+            g.setColor(Color.ORANGE);
+            int [] x = {30,10,30,60};//좌표 x 1 2 3 4 번
             int [] y = {250, 275, 300, 275};
             g.fillPolygon(x,y,4);
         }

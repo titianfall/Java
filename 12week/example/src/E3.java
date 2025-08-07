@@ -17,6 +17,7 @@ public class E3 extends JFrame{
             g.setColor(Color.BLUE);
             g.drawString("아 놀고싶다",30,30);
             //Font f = new Font("Arial",Font.ITALIC,30);
+            //g.setFont(f);
             g.setColor(new Color(255,0,0));
             g.setFont(new Font("Arial",Font.ITALIC,30));
             g.drawString("How much?",30,60);
