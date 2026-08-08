@@ -1,0 +1,31 @@
+# 강의 자료 (PDF 등 — git 무시)
+강의자료/
+
+# 컴파일 산출물
+bin/
+out/
+build/
+target/
+*.class
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# Gradle
+.gradle/
+
+# 로그 및 기타
+*.log
+.DS_Store
+Thumbs.db
