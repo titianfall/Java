@@ -11,7 +11,7 @@
 .
 ├── basic/                     # 김영한 자바 기본편
 │   ├── answer/src/            # 강의 따라 친 정답지 (패키지 = 챕터)
-│   ├── study/                 # 백지에서 다시 작성하는 연습장 (빈 폴더)
+│   ├── java-basic/src/        # 백지에서 다시 작성하는 연습장
 │   ├── docs/javaBasic/        # 학습 정리 md
 │   └── 강의자료/               # 강의 PDF (git 무시)
 └── college/                   # 학교 자바 프로그래밍 수업
@@ -24,7 +24,7 @@
 ### 기본편 — 김영한 자바 기본편
 
 정답지: [`basic/answer/src`](basic/answer/src) — 강의를 따라 친 코드 · 정리 md: `basic/docs/javaBasic/`
-연습장: [`basic/study`](basic/study) — 빈 폴더. 정답지를 보지 않고 직접 다시 작성해 볼 때 쓴다.
+연습장: [`basic/java-basic/src`](basic/java-basic/src) — 정답지를 보지 않고 직접 다시 작성해 보는 별도 프로젝트.
 
 <details>
 <summary><b>챕터별 정리</b> (0/13)</summary>

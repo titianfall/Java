@@ -98,13 +98,14 @@
 
 ## 프로젝트 메모
 
-### 기본편 — `basic/answer`, `basic/study`
+### 기본편 — `basic/answer`, `basic/java-basic`
 - `basic/answer` — 강의를 따라 친 **정답지**. 빌드 도구 없이 `src/` 하나로 구성된
   IntelliJ 학습 프로젝트. 패키지 = 챕터 단위.
-- `basic/study` — 정답지를 보지 않고 다시 작성해 보는 **연습장**. 현재는 빈 폴더다.
+- `basic/java-basic` — 정답지를 보지 않고 다시 작성해 보는 **연습장**. 별도 IntelliJ 프로젝트.
   패키지 선언이 `package class1;`처럼 `src` 기준 상대 경로라, 두 프로젝트 간에
   코드를 옮겨도 `package` 문은 고칠 필요가 없다.
   ⚠️ 두 곳을 동시에 소스 루트로 열면 `class1.Student` 같은 클래스가 중복된다.
+  컴파일 산출물 `out/`과 `*.iml`은 `.gitignore`로 커밋에서 제외한다.
 - 강의자료 PDF는 `basic/강의자료/`에 있으나 `.gitignore`로 커밋에서 제외한다.
 
 ### 학교 수업 — `college/`
