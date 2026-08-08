@@ -47,6 +47,12 @@
 
 </details>
 
+**부록** (챕터 순번과 무관한 배경 지식 정리)
+
+| 문서 | 내용 |
+|------|------|
+| [부록A. `new` 인스턴스 생성 과정 — JVM에서 CPU까지](basic/docs/javaBasic/부록A.%20new%20인스턴스%20생성%20과정%20—%20JVM에서%20CPU까지.md) | 바이트코드 → 클래스 로딩 → 힙 할당 → JIT → OS → CPU 전 과정 다이어그램 |
+
 ### 학교 수업 — 자바 프로그래밍
 
 전체 인덱스: **[college/README.md](college/README.md)** · 주차별 요약은 각 주차 README에 있다.
