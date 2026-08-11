@@ -59,7 +59,7 @@
 | 04 | 생성자 | `construct` | ⬜ |
 | 05 | 패키지 | `pack`, `com/helloshop` | ⬜ |
 | 06 | 접근 제어자 | `access` | ⬜ |
-| 07 | 자바 메모리 구조와 static | `memory`, `static1`, `static2` | ⬜ |
+| 07 | 자바 메모리 구조와 static | `memory`, `static1`, `static2` | ✅ `07. 자바 메모리 구조와 static.md` |
 | 08 | final | `final1` | ⬜ |
 | 09 | 상속 | `extends1` | ⬜ |
 | 10 | 다형성1 | `poly` | ⬜ |

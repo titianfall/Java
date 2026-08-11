@@ -27,7 +27,7 @@
 연습장: [`basic/java-basic/src`](basic/java-basic/src) — 정답지를 보지 않고 직접 다시 작성해 보는 별도 프로젝트.
 
 <details>
-<summary><b>챕터별 정리</b> (0/13)</summary>
+<summary><b>챕터별 정리</b> (1/13)</summary>
 
 | # | 챕터 | 실습 코드 패키지 | 정리 |
 |---|------|-----------------|------|
@@ -37,7 +37,7 @@
 | 04 | 생성자 | `construct` | ⬜ |
 | 05 | 패키지 | `pack`, `com/helloshop` | ⬜ |
 | 06 | 접근 제어자 | `access` | ⬜ |
-| 07 | 자바 메모리 구조와 static | `memory`, `static1`, `static2` | ⬜ |
+| 07 | 자바 메모리 구조와 static | `memory`, `static1`, `static2` | [✅](basic/docs/javaBasic/07.%20자바%20메모리%20구조와%20static.md) |
 | 08 | final | `final1` | ⬜ |
 | 09 | 상속 | `extends1` | ⬜ |
 | 10 | 다형성1 | `poly` | ⬜ |
