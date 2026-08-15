@@ -4,27 +4,33 @@
 
 - **기본편**: 김영한 — 자바 기본편 🟡 실습 코드 완료 / 정리 진행 예정
 - **학교 수업**: 자바 프로그래밍 (1~12주차) 🟡 실습 코드 완료 / 정리 진행 예정
+- **미니프로젝트**: [lostArkClash](miniproject/lostArkClash) — 객체지향언어 미니프로젝트(Swing 타자 게임) 🟡 복원본 완료 / 처음부터 다시 작성 예정
 
 ## 디렉토리 구조
 
 ```
 .
 ├── basic/                     # 김영한 자바 기본편
-│   ├── answer/src/            # 강의 따라 친 정답지 (패키지 = 챕터)
-│   ├── java-basic/src/        # 백지에서 다시 작성하는 연습장
+│   ├── java-basic/src/        # 실습 코드 (패키지 = 챕터)
+│   ├── java-mid1/src/         # 자바 중급편 실습 코드
 │   ├── docs/javaBasic/        # 학습 정리 md
 │   └── 강의자료/               # 강의 PDF (git 무시)
-└── college/                   # 학교 자바 프로그래밍 수업
-    ├── README.md              # 주차 인덱스
-    └── 1week ... 12week/      # 주차별 실습 코드 + README(요약 정리)
+├── college/                   # 학교 자바 프로그래밍 수업
+│   ├── README.md              # 주차 인덱스
+│   └── 1week ... 12week/      # 주차별 실습 코드 + README(요약 정리)
+└── miniproject/               # 강의와 별개인 개인 프로젝트
+    └── lostArkClash/          # 객체지향언어 미니프로젝트 (Swing 타자 게임)
+        └── src/
+            ├── original/      # 보고서 복원본 (기준점, 수정 안 함)
+            └── practice/      # 처음부터 다시 짜는 곳
 ```
 
 ## 학습 정리 진행 상황
 
 ### 기본편 — 김영한 자바 기본편
 
-정답지: [`basic/answer/src`](basic/answer/src) — 강의를 따라 친 코드 · 정리 md: `basic/docs/javaBasic/`
-연습장: [`basic/java-basic/src`](basic/java-basic/src) — 정답지를 보지 않고 직접 다시 작성해 보는 별도 프로젝트.
+실습 코드: [`basic/java-basic/src`](basic/java-basic/src) — 패키지 하나가 챕터 하나 · 정리 md: [`basic/docs/javaBasic/`](basic/docs/javaBasic)
+중급편: [`basic/java-mid1/src`](basic/java-mid1/src) — 자바 중급편 1 실습.
 
 <details>
 <summary><b>챕터별 정리</b> (1/13)</summary>
@@ -81,11 +87,11 @@
 
 ## 개발 환경
 
-| 항목 | 기본편 | 학교 수업 |
-|------|--------|-----------|
-| IDE | IntelliJ IDEA | VS Code (Java Extension Pack) |
-| 빌드 | 없음 (`src/` 단일 소스 루트) | 없음 (`src/` → `bin/` 컴파일) |
-| 주요 주제 | OOP, 상속, 다형성, 설계 | 문법 기초 → 컬렉션 → I/O → Swing GUI |
+| 항목 | 기본편 | 학교 수업 | 미니프로젝트 |
+|------|--------|-----------|--------------|
+| IDE | IntelliJ IDEA | VS Code (Java Extension Pack) | IntelliJ IDEA |
+| 빌드 | 없음 (`src/` 단일 소스 루트) | 없음 (`src/` → `bin/` 컴파일) | 없음 (`src/` → `out/`) |
+| 주요 주제 | OOP, 상속, 다형성, 설계 | 문법 기초 → 컬렉션 → I/O → Swing GUI | Swing GUI · 이벤트 · 멀티스레드 |
 
 ## 참고
 

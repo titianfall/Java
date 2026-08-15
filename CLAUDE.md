@@ -3,7 +3,7 @@
 이 저장소는 **자바를 공부하며 직접 작성한 실습 코드**와, 각 챕터를 마크다운으로 정리한
 학습 노트를 함께 관리하는 학습용 repo다. 두 갈래의 학습을 한 곳에 모았다.
 
-- **기본편**: 김영한 — 자바 기본편 (`basic/answer`) — 실습 코드 작성 완료, 정리 진행 예정
+- **기본편**: 김영한 — 자바 기본편 (`basic/java-basic`) — 실습 코드 작성 완료, 정리 진행 예정
 - **학교 수업**: 자바 프로그래밍 강의 1~12주차 (`college/`) — 실습 코드 작성 완료, 정리 진행 예정
 
 ## 학습 정리 작업 트리거
@@ -19,7 +19,7 @@
 
    | 강의 | 정리 위치 | PDF 강의자료 위치 (git 무시) | 실습 코드 |
    |------|----------|------------------------------|-----------|
-   | 기본편 (김영한) | `basic/docs/javaBasic/NN. 제목.md` | `basic/강의자료/` | `basic/answer/src/<패키지>/` |
+   | 기본편 (김영한) | `basic/docs/javaBasic/NN. 제목.md` | `basic/강의자료/` | `basic/java-basic/src/<패키지>/` |
    | 학교 수업 | `college/<N>week/README.md` | — (별도 자료 없음) | `college/<N>week/{example,practice}/src/` |
 
    - 기본편 파일명은 PDF와 동일한 제목에 두 자리 번호를 붙여 `NN. 제목.md`
@@ -98,15 +98,35 @@
 
 ## 프로젝트 메모
 
-### 기본편 — `basic/answer`, `basic/java-basic`
-- `basic/answer` — 강의를 따라 친 **정답지**. 빌드 도구 없이 `src/` 하나로 구성된
-  IntelliJ 학습 프로젝트. 패키지 = 챕터 단위.
-- `basic/java-basic` — 정답지를 보지 않고 다시 작성해 보는 **연습장**. 별도 IntelliJ 프로젝트.
-  패키지 선언이 `package class1;`처럼 `src` 기준 상대 경로라, 두 프로젝트 간에
-  코드를 옮겨도 `package` 문은 고칠 필요가 없다.
-  ⚠️ 두 곳을 동시에 소스 루트로 열면 `class1.Student` 같은 클래스가 중복된다.
-  컴파일 산출물 `out/`과 `*.iml`은 `.gitignore`로 커밋에서 제외한다.
+### 기본편 — `basic/java-basic`, `basic/java-mid1`
+- `basic/java-basic` — 자바 기본편 실습 코드. 빌드 도구 없이 `src/` 하나로 구성된
+  IntelliJ 학습 프로젝트. **패키지 = 챕터 단위**(`class1`, `ref`, `oop1`, `poly` …).
+- `basic/java-mid1` — 자바 중급편 1 실습 코드. 같은 구조의 별도 프로젝트.
+- 컴파일 산출물 `out/`과 `*.iml`은 `.gitignore`로 커밋에서 제외한다.
+- 원래 `basic/answer`(정답지)와 `basic/java-basic`(연습장) 둘로 나뉘어 있었으나
+  `구조정리` 커밋에서 `java-basic` 하나로 통합했다.
 - 강의자료 PDF는 `basic/강의자료/`에 있으나 `.gitignore`로 커밋에서 제외한다.
+
+### 미니프로젝트 — `miniproject/lostArkClash`
+- 객체지향언어 미니프로젝트(Swing 타자 게임 `lostArkClash`)를 **보고서 PDF의 소스 코드로부터 복원**한
+  독립 IntelliJ 모듈. 강의 정리 규칙(위 정리 트리거)의 대상이 아니라 **실행되는 코드 그 자체**가 목적이다.
+- 패키지 두 개로 나뉜다. 정답지(읽기용) ↔ 연습장(직접 작성) 관계다.
+
+  | 패키지 | 성격 |
+  |--------|------|
+  | `original` | 보고서 복원본. **읽기 전용 기준점 — 절대 수정하지 않는다.** |
+  | `practice` | 사용자가 처음부터 다시 짜는 곳. 현재 `Main.java`(Hello World)뿐. |
+
+- `original` 은 **순수 복원본**이다. 로직·주석은 물론 주석의 오탈자까지 보고서 원문 그대로이며,
+  원본에 있던 버그도 고치지 않고 남겨 두었다(목록은 프로젝트 README 참고).
+  → 요청 없이 임의로 리팩터링하거나 버그를 고치지 말 것. 태그 `lostArkClash-original` 이 이 상태를 가리킨다.
+- 예외는 4가지뿐이다. ① `ClashPanel`(보고서에 코드 없음 → 사양 기반 신규 작성),
+  ② 해상도 의존 좌표 2곳(`// [해상도 호환]` 표기), ③ 파일 맨 위 `package original;` 한 줄,
+  ④ PDF 조판이 깨져 위치를 정해야 했던 한 줄.
+  새로 손댈 일이 생기면 같은 방식으로 **표시하고 README에 기록**한다.
+- 사용자가 게임 기능을 새로 구현해 달라고 하면 `practice` 쪽에 작성한다.
+- `images/`, `music/`, `data/` 는 원본 리소스가 없어 `tools/GenerateAssets.java` 로 만든 자리표시 파일이다.
+- 상세 내용은 [miniproject/lostArkClash/README.md](miniproject/lostArkClash/README.md).
 
 ### 학교 수업 — `college/`
 - VS Code Java 확장으로 만든 주차별 프로젝트. `<N>week/example`(강의 예제),
